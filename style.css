@@ -12,11 +12,10 @@ a:link {
   color: #3C4048;
 }
 
-a:visted {
+a:visited {
   color: #B2B2B2;
   text-decoration: none;
 }
-
 
 a:hover {
   color : #00ABB3;
