@@ -1,4 +1,8 @@
 /* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin:0;
   padding: 0;
@@ -13,24 +17,31 @@
   padding: 0;
 }
 
-.dial_number > span:hover{
+/* .dial_number > span:hover{
   color: #00ABB3;
   font-weight: 600;
   transform: scale(2);
-}
+} */
 
 .dial_number span{
   font-size: 14px;
   font-weight: 300;
-  margin-left: 5px;
+  color:#3C4048;
+  margin: 5px;
+  animation: bounce .3s infinite alternate;
 }
+
 
 .dial_number{
   display: flex;
+  margin: 10px;
+  padding: 5px;
   align-items: center;
+
+  flex-wrap: nowrap;
   width: 540px;
-  height: 40px;
-  overflow-x: auto;
+  height: 50px;
+  overflow: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
