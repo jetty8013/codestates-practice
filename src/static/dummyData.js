@@ -69,6 +69,7 @@ const dummyTweets = [
     createdAt: getParsedDate('2022-02-28T16:17:47.000Z'),
     updatedAt: getParsedDate('2022-02-28T16:17:47.000Z'),
   },
+  
 ];
 
 export { dummyTweets };
