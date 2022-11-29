@@ -32,10 +32,14 @@
 // _.once는 callback 함수를 한 번만 호출하는 '함수'를 리턴합니다.
 // _.once가 리턴하는 함수를 여러 번 호출해도 callback 함수는 한 번 이상 호출되지 않습니다.
 _.once = function (func) {
-  // TODO: 여기에 코드를 작성합니다.
-
-  return function () {
-    // TIP: arguments 키워드 혹은, spread operator를 사용하세요.
+  // TODO: 여기에 코드를 작성합니다.\
+  let result;
+  return function() {
+    if(func){
+      result = func.apply(this,arguments)
+      func = null;
+    }
+    return result
   };
 };
 
