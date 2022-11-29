@@ -20,9 +20,7 @@ const Tweets = () => {
         createdAt: new Date(),
         updatedAt: new Date(),
     };
-    // setData([...dummyTweets])
-    setData([tweet,...data])
-    // setData([tweet,...data]);
+    setData([tweet,...data]);
     // TODO : Tweet button 엘리먼트 클릭시 작동하는 함수를 완성하세요.
     // 트윗 전송이 가능하게 작성해야 합니다.
   };
